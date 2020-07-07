@@ -123,7 +123,7 @@ async function loadDict() {
     
     await $.ajax({
         url: loc,
-        dataType: 'text',
+        dataType: 'text'
     }).done(success);
 }
 
@@ -180,6 +180,7 @@ function preprocess(imgData) {
 /*
 load the model
 */
+start('en')
 async function start(cur_mode) {
     //arabic or english
     mode = cur_mode
