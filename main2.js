@@ -235,7 +235,7 @@ function predict(){
     if(names =="face"){
         document.getElementById("test2").innerHTML="That is face"; 
    
-        setTimeout('window.location.href="<>B.html";',1000);
+        setTimeout('window.location.href="drB.html";',1000);
 
     }
         

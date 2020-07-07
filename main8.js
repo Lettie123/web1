@@ -235,7 +235,7 @@ function predict(){
     if(names =="tree"){
         document.getElementById("test2").innerHTML="That is Tree"; 
    
-        setTimeout('window.location.href="<>C.html";',1000);
+        setTimeout('window.location.href="drC.html";',1000);
 
     }
         

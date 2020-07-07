@@ -235,7 +235,7 @@ function predict(){
     if(names =="moon"){
         document.getElementById("test2").html="That is moon"; 
    
-        setTimeout('window.location.href="<>B.html";',1000);
+        setTimeout('window.location.href="drB.html";',1000);
 
     }
         

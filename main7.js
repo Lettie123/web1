@@ -235,7 +235,7 @@ function predict(){
     if(names =="rain"){
         document.getElementById("test2").innerHTML="That is Rain"; 
    
-        setTimeout('window.location.href="<>C.html";',1000);
+        setTimeout('window.location.href="drC.html";',1000);
 
     }
         
