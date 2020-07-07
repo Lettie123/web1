@@ -39,8 +39,8 @@ function setTable(top1, probs) {
     for (var i = 0; i < top2.length; i++) {
         let sym = document.getElementById('sym' + (i + 1))
         let prob = document.getElementById('prob' + (i + 1))
-        sym.innerHTML = top1[i]
-        prob.innerHTML = Math.round(probs[i] * 100)
+        sym.html = top1[i]
+        prob.html = Math.round(probs[i] * 100)
     }
 
 }
@@ -214,7 +214,7 @@ clear the canvs
 */
 function erase() {
     canvas.clear();
-    document.getElementById("test").innerHTML=""; 
+    document.getElementById("test").html=""; 
     document.getElementById("testA").style.visibility="hidden";
     document.getElementById("testB").style.visibility="hidden";
     document.getElementById("testA2").style.visibility="hidden";
@@ -233,7 +233,7 @@ function predict(){
 
     // console.log(names);
     if(names =="moon"){
-        document.getElementById("test2").innerHTML="That is moon"; 
+        document.getElementById("test2").html="That is moon"; 
    
         setTimeout('window.location.href="<>B.html";',1000);
 
@@ -241,7 +241,7 @@ function predict(){
         
      
     else{
-        document.getElementById("test").innerHTML="Sorry, I don't know what's that"; 
+        document.getElementById("test").html="Sorry, I don't know what's that"; 
         document.getElementById("testA").style.visibility="visible";
         document.getElementById("testB").style.visibility="visible";
         document.getElementById("testA2").style.visibility="visible";

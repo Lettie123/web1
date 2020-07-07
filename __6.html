@@ -1,91 +1,83 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Sketcher</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	
 
-<!-- jQuery library -->
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
+    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
+    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<!-- TensorFlow.js script -->
+    <!-- TensorFlow.js script -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
-	
-<!-- canvas script -->
+
+    <!-- canvas script -->
     <script src="fabric.js"></script>
-	
-<!-- main script -->
-    <script src = "main6.js" > </script>
+
+    <!-- main script -->
+    <script src="main6.js"> </script>
 
     <link rel="stylesheet" type="text/css" href="css/style001.css">
 
 
-    </head>
+</head>
 
-    <body
-        background="img/painting.jpg"
-        style=" background-repeat:no-repeat ;
+<body background="img/painting.jpg" style=" background-repeat:no-repeat ;
         background-size:100% 100%;
         background-attachment: fixed;">
-        <canvas id="canvas" width="300" height="300" class="canvas" style="border:5px solid #f2b090;margin-top:60%;margin-left:180%;"></canvas>
-        <button type="button" class= "button1" onclick='predict()'>done </button>
+    <canvas id="canvas" width="300" height="300" class="canvas"
+        style="border:5px solid #f2b090;margin-top:60%;margin-left:180%;"></canvas>
+    <button type="button" class="button1" onclick='predict()'>done </button>
 
 
-        <button type="button" id= "button2" onclick='erase()'>
-           <span>
-               <img src="img/erase.png"
-               style= width:40px;>
-           </span>
-        </button>
+    <button type="button" id="button2" onclick='erase()'>
+        <span>
+            <img src="img/erase.png" style=width:40px;>
+        </span>
+    </button>
 
-        <div id="test"  style="position:absolute; top:12%; left:31%;"></div>
+    <div id="test" style="position:absolute; top:12%; left:31%;"></div>
 
-        <div id="test2"  style="position:absolute; top:14%; left:40%;"></div>
-        <div id="testA"  style="position:absolute; top:63%; margin-left:60%; visibility:hidden;">
-           <span>
-            <img src="img/try.png"
-            style= width:16%;></span>
+    <div id="test2" style="position:absolute; top:14%; left:40%;"></div>
+    <div id="testA" style="position:absolute; top:63%; margin-left:60%; visibility:hidden;">
+        <span>
+            <img src="img/try.png" style=width:16%;></span>
         Try again
-        </div>
+    </div>
 
-        <div id="testA2"  style="position:absolute; top:20%; margin-left:60%;visibility:hidden;">
-            <span>
-             <img src="img/try2.png"
-             style= width:16%;></span>
-         Change anotherone
-         </div>
+    <div id="testA2" style="position:absolute; top:20%; margin-left:60%;visibility:hidden;">
+        <span>
+            <img src="img/try2.png" style=width:16%;></span>
+        Change anotherone
+    </div>
 
-        <div id="testB"  style="position:absolute; top:17%; margin-left:47%; visibility:hidden;">
-            <span>
-                <img src="img/change.png"
-                style= width:50px;
-                onclick="tz()">
-            </span>
-        
-        </div>
-        <script>
-            function tz(){
-                  window.location.href="<>4.html";
-                 }
-         </script>
-        <div id="head"   style="position:absolute; top:2%; margin-left:42%;">
-            Wine glass
-        </div>
-      
+    <div id="testB" style="position:absolute; top:17%; margin-left:47%; visibility:hidden;">
+        <span>
+            <img src="img/change.png" style=width:50px; onclick="tz()">
+        </span>
 
+    </div>
+    <div id="head" style="position:absolute; top:2%; margin-left:42%;">
+        Wine glass
+    </div>
 
-    </body>
-       <script>
-        console.log('starting');
-        start('en')
-       </script>
+</body>
+<script>
+    function tz() {
+        window.location.href = "<>4.html";
+    }
+    console.log('starting');
+    start('en')
+</script>
 
 
 </html>

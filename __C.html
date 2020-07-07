@@ -1,38 +1,38 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style3.css">
-    </head>
 
-    <body
-        background="img/bg3.jpg"
-        style=" background-repeat:no-repeat ;
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+</head>
+
+<body background="img/bg3.jpg" style=" background-repeat:no-repeat ;
         background-size:100% 100%;
         background-attachment: fixed;">
 
-        <h1 class= "h1">Congratulations!</h1>
-        <h2 class= "h2">The last one!</h2>
+    <h1 class="h1">Congratulations!</h1>
+    <h2 class="h2">The last one!</h2>
 
-        <script language="javascript">
-            function test(){
-            var url=new Array();
-            url[0]="<>7.html";
-            url[1]="<>8.html";
-            url[2]="<>9.html";
-            url[3]="<>10.html";
-            var ints=parseInt(Math.random()*(url.length));
-            window.location=(url[ints]); 
-            }</script>
-    
-        <button class="button" onclick="tz()">  
-                 start
-        </button>
-            
-    
-        <script>
-            function tz(){
-            window.location.href="javascript:test()";
+    <script language="javascript">
+        function test() {
+            var url = new Array();
+            url[0] = "<>7.html";
+            url[1] = "<>8.html";
+            url[2] = "<>9.html";
+            url[3] = "<>10.html";
+            var ints = parseInt(Math.random() * (url.length));
+            window.location = (url[ints]);
+        }</script>
+
+    <button class="button" onclick="tz()">
+        start
+    </button>
+
+
+    <script>
+        function tz() {
+            window.location.href = "javascript:test()";
         }
-        </script>
-    </body>
+    </script>
+</body>
 
 </html>
