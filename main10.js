@@ -235,7 +235,7 @@ function predict(){
     if(names =="hat"){
         document.getElementById("test2").innerHTML="That is Hat"; 
    
-        setTimeout('window.location.href="drC.html";',1000);
+        setTimeout('window.location.href="drD.html";',1000);
 
     }
         
