@@ -215,7 +215,7 @@ clear the canvs
 */
 function erase() {
     canvas.clear();
-    document.getElementById("test").innerHtml=""; 
+    document.getElementById("test").innerHTML=""; 
     document.getElementById("testA").style.visibility="hidden";
     document.getElementById("testB").style.visibility="hidden";
     document.getElementById("testA2").style.visibility="hidden";
@@ -234,7 +234,7 @@ function predict(){
 
     // console.log(names);
     if(names =="moon"){
-        document.getElementById("test2").innerHtml="That is moon"; 
+        document.getElementById("test2").innerHTML="That is moon"; 
    
         setTimeout('window.location.href="drB.html";',1000);
 
@@ -242,7 +242,7 @@ function predict(){
         
      
     else{
-        document.getElementById("test").innerHtml="Sorry, I don't know what's that"; 
+        document.getElementById("test").innerHTML="Sorry, I don't know what's that"; 
         document.getElementById("testA").style.visibility="visible";
         document.getElementById("testB").style.visibility="visible";
         document.getElementById("testA2").style.visibility="visible";
