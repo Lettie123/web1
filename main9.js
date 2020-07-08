@@ -235,7 +235,7 @@ function predict(){
     if(names =="tsailboat"){
         document.getElementById("test2").innerHTML="That is Ship"; 
    
-        setTimeout('window.location.href="drC.html";',1000);
+        setTimeout('window.location.href="drD.html";',1000);
 
     }
         
