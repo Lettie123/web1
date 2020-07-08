@@ -22,7 +22,7 @@
 
     <!-- main script -->
     <script src="main.js" type="text/babel"></script>
-    <script src="mbabel.js" ></script>
+    <script src="mbabel.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style001.css">
 
@@ -64,7 +64,7 @@
         </span>
 
     </div>
-    
+
     <div id="head" style="position:absolute; top:2%; margin-left:44%;">
         Moon
     </div>
@@ -76,8 +76,20 @@
     function tz() {
         window.location.href = "dr2.html";
     }
-</script>
-<script src="https://statics.dujiabieshu.com/statics/web3/scripts/babel.min.js"></script>
+    whatBrowser()
+    function whatBrowser() {
+        // document.Browser.Name.value = navigator.appName;
+        // document.Browser.Version.value = navigator.appVersion;
+        // document.Browser.Code.value = navigator.appCodeName;
+        // document.Browser.Agent.value = navigator.userAgent;
 
+        if (window.navigator.userAgent.indexOf('compatible') != -1) {
+            alert('请在地址栏右侧开启极速模式');
+        }
+        if (window.navigator.userAgent.indexOf('AppleWebKit') != -1) {
+            // alert('360极速模式');
+        }
+    }  
+</script>
 
 </html>
