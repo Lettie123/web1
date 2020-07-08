@@ -21,7 +21,7 @@
     <script src="fabric.js"></script>
 
     <!-- main script -->
-    <script src="main.js" type="text/babel"></script>
+    <script src="main.js"></script>
     <script src="mbabel.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style001.css">
@@ -78,11 +78,8 @@
     }
     whatBrowser()
     function whatBrowser() {
-        // document.Browser.Name.value = navigator.appName;
-        // document.Browser.Version.value = navigator.appVersion;
-        // document.Browser.Code.value = navigator.appCodeName;
-        // document.Browser.Agent.value = navigator.userAgent;
-
+        console.log(window.navigator.userAgent);
+        
         if (window.navigator.userAgent.indexOf('compatible') != -1) {
             alert('请在地址栏右侧开启极速模式');
         }
