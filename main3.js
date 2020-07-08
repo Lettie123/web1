@@ -180,7 +180,7 @@ function preprocess(imgData) {
 /*
 load the model
 */
-start('en')
+
 async function start(cur_mode) {
     //arabic or english
     mode = cur_mode
