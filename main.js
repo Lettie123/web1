@@ -124,7 +124,7 @@ async function loadDict() {
     await $.ajax({
         url: loc,
         dataType: 'text'
-    }).done(success);
+    }).done(success)
 }
 
 /*
